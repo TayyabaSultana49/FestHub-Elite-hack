@@ -33,7 +33,6 @@ body::before {
     radial-gradient(circle at 40% 40%, rgba(120,219,255,0.25) 0%, transparent 55%);
   pointer-events: none;
   z-index: -1;
-  animation: particles 22s linear infinite;
 }
 
 
