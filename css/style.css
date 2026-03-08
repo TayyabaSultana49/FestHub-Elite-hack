@@ -14,6 +14,8 @@ body {
   color: #fff;
   overflow-x: hidden;
   position: relative;
+  animation: none !important;
+
 }
 
 @keyframes gradientShift {
@@ -34,11 +36,6 @@ body::before {
   animation: particles 22s linear infinite;
 }
 
-@keyframes particles {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  33% { transform: translateY(-12px) rotate(120deg); }
-  66% { transform: translateY(12px) rotate(240deg); }
-}
 
 .container {
   max-width: 1200px;
