@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #050509 0%, #120021 25%, #000033 50%, #25004d 75%, #050509 100%);
   background-size: 400% 400%;
-  animation: gradientShift 18s ease infinite;
+  background-attachment: fixed;
   color: #fff;
   overflow-x: hidden;
   position: relative;
