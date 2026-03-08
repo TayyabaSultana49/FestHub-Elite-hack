@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festhub - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyCPj9wj3tbS_t1aZoyo2dY0ZsgITRZFPJ4",
+      authDomain: "festhub-d8c19.firebaseapp.com",
+      projectId: "festhub-d8c19",
+      storageBucket: "festhub-d8c19.firebasestorage.app",
+      messagingSenderId: "64357206251",
+      appId: "1:64357206251:web:ac2661d6ccd9059b1896ae",
+      measurementId: "G-Y20CMQ4DGX"
+    };
+    initializeApp(firebaseConfig);
+  </script>
+
+  <script type="module" src="js/auth.js" defer></script>
+  <script type="module" src="js/events.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FESTHUB</div>
+      <div>
+        <span id="user-email"></span>
+        <button id="logout-btn" class="btn btn-secondary">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="dashboard-stats">
+        <div class="stat-card card">
+          <div class="stat-number" id="total-events">0</div>
+          <p>Live Events</p>
+        </div>
+        <div class="stat-card card">
+          <div class="stat-number">24h</div>
+          <p>Agile Build Cycle</p>
+        </div>
+        <div class="stat-card card">
+          <div class="stat-number">60%</div>
+          <p>Audience Boost</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Events</h2>
+        <div id="events-container"></div>
+      </div>
+
+      <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="create-event.html"><button class="btn">Create Event</button></a>
+        <a href="team-builder.html"><button class="btn btn-secondary">Team Builder</button></a>
+        <a href="join-event.html"><button class="btn btn-secondary">Join Event</button></a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

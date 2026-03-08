@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festhub - Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyCPj9wj3tbS_t1aZoyo2dY0ZsgITRZFPJ4",
+      authDomain: "festhub-d8c19.firebaseapp.com",
+      projectId: "festhub-d8c19",
+      storageBucket: "festhub-d8c19.firebasestorage.app",
+      messagingSenderId: "64357206251",
+      appId: "1:64357206251:web:ac2661d6ccd9059b1896ae",
+      measurementId: "G-Y20CMQ4DGX"
+    };
+    initializeApp(firebaseConfig);
+  </script>
+  <script type="module" src="js/auth.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FESTHUB</div>
+      <button class="btn" onclick="window.location.href='signup.html'">Signup</button>
+    </header>
+
+    <main>
+      <div class="card" style="max-width: 480px; margin: 0 auto;">
+        <h2>Login</h2>
+        <p>Enter your Festhub credentials to access the dashboard.</p>
+        <form id="login-form">
+          <input id="login-email" name="login-email" type="email" placeholder="Email" required />
+          <input id="login-password" name="login-password" type="password" placeholder="Password" required />
+          <button type="submit" class="btn" style="width: 100%; padding: 14px;">Login</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

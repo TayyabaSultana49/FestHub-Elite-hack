@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Event - Festhub</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyCPj9wj3tbS_t1aZoyo2dY0ZsgITRZFPJ4",
+      authDomain: "festhub-d8c19.firebaseapp.com",
+      projectId: "festhub-d8c19",
+      storageBucket: "festhub-d8c19.firebasestorage.app",
+      messagingSenderId: "64357206251",
+      appId: "1:64357206251:web:ac2661d6ccd9059b1896ae",
+      measurementId: "G-Y20CMQ4DGX"
+    };
+    initializeApp(firebaseConfig);
+  </script>
+  <script type="module" src="js/events.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FESTHUB</div>
+      <button class="btn" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+    </header>
+    <main>
+      <div class="card">
+        <h2>Join Events</h2>
+        <p>Browse all live events and join with one click.</p>
+        <div id="events-container"></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

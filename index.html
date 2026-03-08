@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festhub - All-in-One Campus Event Solution</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Firebase core (your config) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCPj9wj3tbS_t1aZoyo2dY0ZsgITRZFPJ4",
+      authDomain: "festhub-d8c19.firebaseapp.com",
+      projectId: "festhub-d8c19",
+      storageBucket: "festhub-d8c19.firebasestorage.app",
+      messagingSenderId: "64357206251",
+      appId: "1:64357206251:web:ac2661d6ccd9059b1896ae",
+      measurementId: "G-Y20CMQ4DGX"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    getAnalytics(app);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FESTHUB</div>
+      <nav>
+        <a href="index.html"><button class="btn">Home</button></a>
+        <a href="login.html"><button class="btn btn-secondary">Login</button></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card">
+        <h1>FESTHUB: All-in-One Campus Event Solution</h1>
+        <p>
+          Manage campus fests, hackathons, registrations, teams, and analytics from a single professional platform.
+        </p>
+
+        <div class="grid" style="margin-top: 30px;">
+          <div class="card">
+            <h3>🚀 Smart Event Management</h3>
+            <p>Create, publish, and manage multi‑track events with live capacity indicators.</p>
+          </div>
+          <div class="card">
+            <h3>👥 Dynamic Team Builder</h3>
+            <p>Auto‑match participants, handle solo/duo/squad modes, and manage team invites.</p>
+          </div>
+          <div class="card">
+            <h3>📊 Real‑time Analytics</h3>
+            <p>Track registrations, engagement, and participation across every event in seconds.</p>
+          </div>
+        </div>
+
+        <a href="login.html">
+          <button class="btn" style="margin-top: 30px; padding: 18px 40px; font-size: 1.1rem;">
+            Get Started
+          </button>
+        </a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
