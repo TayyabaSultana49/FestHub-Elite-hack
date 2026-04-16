@@ -3,67 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Festhub - All-in-One Campus Event Solution</title>
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Firebase core (your config) -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCPj9wj3tbS_t1aZoyo2dY0ZsgITRZFPJ4",
-      authDomain: "festhub-d8c19.firebaseapp.com",
-      projectId: "festhub-d8c19",
-      storageBucket: "festhub-d8c19.firebasestorage.app",
-      messagingSenderId: "64357206251",
-      appId: "1:64357206251:web:ac2661d6ccd9059b1896ae",
-      measurementId: "G-Y20CMQ4DGX"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    getAnalytics(app);
-  </script>
+  <title>FestHub</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">FESTHUB</div>
-      <nav>
-        <a href="index.html"><button class="btn">Home</button></a>
-        <a href="login.html"><button class="btn btn-secondary">Login</button></a>
-      </nav>
-    </header>
+  <section id="landing" class="screen active">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <h1>Welcome to <span>FestHub</span></h1>
+      <p>The ultimate multi-event management platform for clubs and fest committees.</p>
+      <button id="goRole">Get Started</button>
+    </div>
+  </section>
 
-    <main>
-      <div class="card">
-        <h1>FESTHUB: All-in-One Campus Event Solution</h1>
-        <p>
-          Manage campus fests, hackathons, registrations, teams, and analytics from a single professional platform.
-        </p>
-
-        <div class="grid" style="margin-top: 30px;">
-          <div class="card">
-            <h3>🚀 Smart Event Management</h3>
-            <p>Create, publish, and manage multi‑track events with live capacity indicators.</p>
-          </div>
-          <div class="card">
-            <h3>👥 Dynamic Team Builder</h3>
-            <p>Auto‑match participants, handle solo/duo/squad modes, and manage team invites.</p>
-          </div>
-          <div class="card">
-            <h3>📊 Real‑time Analytics</h3>
-            <p>Track registrations, engagement, and participation across every event in seconds.</p>
-          </div>
-        </div>
-
-        <a href="login.html">
-          <button class="btn" style="margin-top: 30px; padding: 18px 40px; font-size: 1.1rem;">
-            Get Started
-          </button>
-        </a>
+  <section id="roleSelect" class="screen">
+    <div class="center-box">
+      <h2>FestHub</h2>
+      <p>Choose your role to continue</p>
+      <div class="role-grid">
+        <button class="role-card" data-role="admin">
+          <strong>Admin</strong><small>Create & manage events</small>
+        </button>
+        <button class="role-card" data-role="participant">
+          <strong>Participant</strong><small>Browse & join events</small>
+        </button>
       </div>
-    </main>
+    </div>
+  </section>
+
+  <section id="app" class="screen">
+    <header class="topbar">
+      <div class="brand">FestHub</div>
+      <nav id="mainNav"></nav>
+      <div class="right-actions">
+        <button id="notifyBtn" class="ghost">🔔</button>
+        <button id="logoutBtn" class="ghost">Logout</button>
+      </div>
+    </header>
+    <main id="view"></main>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card" id="modalContent"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

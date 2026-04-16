@@ -1,47 +1,19 @@
-# FestHub
+# FestHub 
+FestHub is a multi-event management web application designed for both Admin and Participant roles. It includes event management, registrations, team formation, notifications, attendance, and analytics in a clean UI. 
+## Features 
+### Admin - 
+Create and manage events - View event dashboard - Track registrations and check-ins - View analytics - Manage venues or meeting links - Post announcements and notifications 
 
-A modern campus event management platform for college fests, hackathons, and technical events.
-
-## Overview
-
-FestHub is a full-stack web application that simplifies event organization and participation. Users can create events with unique 6-digit codes, join events instantly, manage teams, and track participation through a sleek cyberpunk-themed dashboard.
-
-## Features
-
-- Event creation with name, date, venue, and capacity limits
-- Instant event joining via 6-digit codes
-- User dashboard showing joined events and statistics
-- Complete authentication system (signup/login)
-- Responsive design optimized for mobile and desktop
-- Team management interface
-- Admin panel for event management
-- Real-time participant tracking
-- Glassmorphism UI with neon gradients and animations
-
-## Technology Stack
-
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript 
-- **Backend**: Firebase Firestore Database & Authentication
-- **Styling**: Custom CSS with modern effects 
-- **Deployment**: Firebase hosting,GitHub.
-
-## Project Structure
-
-festhub/
-├── index.html
-├── login.html
-├── signup.html
-├── create-event.html
-├── join-event.html
-├── dashboard.html
-├── team-builder.html
-├── admin.html
-├── css
-       |------ style.css
-├── js
-      ├── firebase.js
-      ├── auth.js
-      └── events.js
+### Participant - 
+Browse events - Register for events - Join or create teams - Invite members using invite codes - View notifications - Access personal dashboard 
+## Tech Stack 
+- HTML - CSS - JavaScript
+ ## Project Structure 
+ festhub/ 
+ ├── index.html 
+ ├── style.css
+ ├── script.js 
+ └── README.md
 
 Live Demo:https://youtu.be/uNdRIn6EsiA?si=SBbAMlg4kcc_tzMy
 Pitch link:https://youtu.be/ws2F07gqOQQ?si=92XP7q0jj4Ymnk_E
